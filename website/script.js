@@ -5,6 +5,13 @@ const projects = [
     // ... Add all 100 days here following this pattern
     
     { day: 31, title: "Job Board", folder: "INTERMEDIATE/day-31-job-board", level: "Intermediate" },
+    { 
+  day: 32, 
+  title: "Nike E-store", 
+  folder: "INTERMEDIATE/day-45-my-intermediate-project", 
+  level: "Intermediate"
+},
+
     
     { day: 61, title: "Fullstack Ecommerce", folder: "ADVANCED/day-61-fullstack-ecommerce", level: "Advanced" }
 ];
@@ -27,6 +34,7 @@ projects.forEach(project => {
         <div class="card-actions">
             <a href="${liveBaseUrl}${project.folder}/index.html" target="_blank" class="btn-small">Live Demo</a>
             <a href="${repoBaseUrl}${project.folder}" target="_blank" class="btn-small outline">View Code</a>
+
         </div>
     `;
     grid.appendChild(card);
